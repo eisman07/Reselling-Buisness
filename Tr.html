@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <script src="/Privat/Javascript/Tr.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Taschenrechner</h1>
+        <p>
+            <label for="z1">Zahl 1:</label>
+            <input type="text" id="z1" value="0" oninput="clearResult()">
+        </p>
+        <p>
+            <label for="z2">Zahl 2:</label>
+            <input type="text" id="z2" value="0" oninput="clearResult()">
+        </p>
+        <p>
+            <button onclick="addition()">Addition</button>
+            <button onclick="subtraktion()">Subtraktion</button>
+            <button onclick="multiplikation()">Multiplikation</button>
+            <button onclick="division()">Division</button>
+        </p>
+        <p id="ergebnis"></p>
+    </div>
+</body>
+</html>
